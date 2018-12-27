@@ -1,0 +1,16 @@
+{
+  "name": "chargecardworker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "camunda-external-task-client-js": "^1.1.1",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  }
+}
