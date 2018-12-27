@@ -100,7 +100,7 @@ router.post('/call/*', function (req, res) {
             res.status(post_response.statusCode).send(post_body);
         })
     }
-    res.send("Control should not reach here 3");
+    //res.send("Control should not reach here 3");
 });
 router.post('/*', function (req, res) {
     //
@@ -123,7 +123,7 @@ router.post('/*', function (req, res) {
         llog(`response received for POST:${localhost}/${url} as : \n${JSON.stringify(post_body, null, 3)}`);
         res.status(post_response.statusCode).send(post_body);
         })
-    res.send("Control should not reach here 2");
+    //res.send("Control should not reach here 2");
 })
 router.get('/*', function (req, res) {
     url = req.param(0);
@@ -138,7 +138,7 @@ router.get('/*', function (req, res) {
         llog(`response received for GET:${localhost}/${url} as : \n${JSON.stringify(get_body, null, 3)}`);
         res.status(get_response.statusCode).send(get_body);
     });
-    res.send("Control should not reach here 1");
+    //res.send("Control should not reach here 1");
 })
 app.use(router);
 
